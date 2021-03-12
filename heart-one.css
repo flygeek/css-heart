@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heart {
+    margin: 300px;
+    position: relative;
+    display: inline-block;
+    transition: all 1s;
+}
+
+.heart div {
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+
+.heart .middle {
+    transform: rotate(45deg);
+}
+
+.heart .left {
+    position: absolute;
+    bottom: 100%;
+    right: 100%;
+    transform: rotate(45deg) translateX(60px);
+    border-radius: 50% 0 0 50%;
+}
+
+.heart .right {
+    position: absolute;
+    bottom: 100%;
+    left: 100%;
+    transform: rotate(45deg) translateY(60px);
+    border-radius: 50% 50% 0 0;
+}
+
+.heart:hover {
+    transform: scale(1.5);
+}
